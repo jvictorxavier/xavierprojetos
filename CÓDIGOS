@@ -1,0 +1,453 @@
+                          programa
+{
+	
+	funcao inicio()
+	{
+	    real km, litros, consumo
+		escreva("informe quantos kms o veículo percorreu: \n")
+		 leia(km)
+		  escreva("informe a quantidade de combustivel usado: \n")
+		   leia(litros)
+		    escreva("A autonomia de ", km/litros, " km por litro de combustivel")
+		   
+	}
+}
+
+2ª QUESTÃO
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome
+		escreva("Digite seu nome:")
+		leia(nome)
+
+		real salario
+		escreva("Digite seu salário fixo: \n")
+		leia(salario)
+
+		inteiro vendas
+		escreva("\nDigite as vendas realizadas: ")
+		leia(vendas)
+
+		escreva("Seu salário é de: R$" , Ex7(salario,vendas)) }
+	
+	funcao real Ex7(real salario, inteiro vendas)
+	{
+		escreva(salario+vendas*0.15)
+
+		retorne (salario+vendas*0.15)
+	}
+}
+
+3ª QUESTÃO
+programa
+{
+	
+	funcao inicio()
+	{
+		real nota1, nota2, nota3, nota4, media
+		cadeia nomeAluno
+escreva("Digite o seu nome")
+leia(nomeAluno)
+escreva("Digite a nota 1:")
+leia(nota1)
+escreva("Digite a nota 2:")
+leia(nota2)
+escreva("Digite a nota 3:")
+leia(nota3)
+media = (nota1 + nota2 + nota3) /3
+escreva(nomeAluno + " sua média é: " + media)
+
+
+	}
+}
+
+4ª QUESTÃO
+programa
+{
+	
+	funcao inicio()
+	{
+
+inteiro A, valor_A, Valor_B, B  
+
+escreva("Escreva um Valor para (A)")
+leia(A)
+escreva("Escreva um valor para (B)")
+leia(B)
+
+escreva("\nO valor da variavel A sem a troca é ", A)
+escreva("\nO valor da variavel B sem a troca é ", B)
+
+
+se( A >= B ou B >= A)
+
+escreva("\nA variavel A recebe o valor da variavel B" , A)
+escreva("\nA variavel B recebe o valor da variavel A" , B)
+	}
+}
+
+5ª QUESTÃO
+programa
+{
+	
+	funcao inicio()
+	{
+		real c, f
+	
+		escreva("Informe a temperatura em graus celsius\n")
+		leia(c)
+		f = (9 * c + 160)/5
+		escreva("Essa temperatura em graus Fahrenheit é de\n", f ,"_graus")
+		
+	}
+}
+
+6ª QUESTÃO
+programa
+{
+	
+	funcao inicio()
+	{
+		
+ 
+    real valorReal, valorDolar 
+    
+    escreva("Digite o valor a ser convertido: R$")
+    leia(valorReal)
+    valorDolar = valorReal / 4.6
+    escreva("\n\nValor convertido $", valorDolar, "\n\n")
+  }
+
+	
+}
+
+7ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		real valor, rendimento, resultado
+		  escreva("quando deseja depositar: ") leia(valor)
+		  rendimento=valor*0.70/100 resultado=rendimento+valor 
+		limpa()
+		  escreva("o valor apos um mes sera: ", resultado)
+          }
+}
+8ª QUESTÃO
+programa
+{
+	
+	funcao inicio(){
+		real valor, prestacao 
+		  escreva("valor do produto: ") leia(valor)
+		  prestacao=valor/5
+		  escreva("o valor da prestçõa fica:", prestacao )}
+}
+
+9ª QUESTÃO
+programa
+{
+	
+	funcao inicio(){
+		real valor_inicial, valor_final,valor, por
+		  escreva("qual o valor do produto: ") leia(valor_inicial)
+		  escreva("quantos porcento você quer?: ") leia(valor)
+		  por=(valor_inicial*valor)/100 
+		  valor_final=(por+valor_inicial)
+
+          limpa()
+          
+		  escreva("valor de venda será ", valor_final)}
+	
+}
+
+10ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		real valor_fabrica, valor_intermediario, valor_final
+		real por_distribuidor, por_imposto
+		
+		  escreva("valor de fabricação é: ") leia(valor_fabrica)
+		
+		  por_imposto=(valor_fabrica*45)/100
+		  valor_intermediario=(por_imposto+valor_fabrica)
+		  por_distribuidor=(valor_intermediario*28)/100
+		  valor_final=(valor_intermediario+por_distribuidor) 
+		
+		limpa()
+
+		  escreva("valor de fabrica: ", valor_fabrica, "\n", "valor do consumidor ", valor_final)}
+		
+		
+		
+	}
+	
+11ª QUESTÃO
+programa
+{
+	
+	funcao inicio(){
+		inteiro n1
+		  escreva("digite um numero: ")
+		  leia(n1)
+			se(n1>=10){
+				escreva("esse numero e bem alto")}
+				
+				
+			}
+		
+}
+
+12ª QUESTÃO
+	funcao inicio(){
+		inteiro n1, n2
+		
+		  escreva("digite o primeiro numero ") leia(n1)
+		  escreva("digite o segundo numero ") leia(n2)
+
+		limpa()
+
+		  se(n1>n2){ programa{
+	
+
+			  escreva("o primeiro numero e maior que o segundo")}
+		  senao se(n1<n2){
+			  escreva("o segundo numero e maior que o primeiro")}
+			
+		}
+}
+
+13ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		inteiro n1
+		  escreva("digite um numero ") leia(n1)
+
+		limpa()
+
+		  se(n1>100 e n1<200){
+			  escreva("esse numero esta entre 100 e 200")}
+		  senao{
+			  escreva("esse numero não esta entre 100 e 200")}
+				
+			
+		}
+}
+
+14ª QUESTÃO
+programa{
+	  inclua biblioteca Matematica-->mat 
+	    funcao inicio(){
+	    cadeia nome real recuperacao, media, n1, n2, n3, ar
+	
+	      escreva(" qual o nome do aluno: ") leia(nome)
+	      escreva(" primeira nota: ") leia(n1)
+	      escreva(" segunda nota: ") leia(n2)
+	      escreva(" terceira nota: ") leia(n3)
+
+	      media=(n1+n2+n3)/3
+	    limpa()
+	
+           ar = mat.arredondar(media,2)
+	      escreva("nome:", nome, "\n","media:", +ar, "\n")
+	        se(ar>=7){
+		     escreva("aprovado")}
+	        senao se(ar>=5.1 e ar<=6.9){
+		     escreva("recuperação")}
+	        senao{
+		     escreva("reprovado")}
+		
+ }
+		
+}
+	
+15ª QUESTÃO  	
+programa{ 
+	
+	funcao inicio(){
+		inteiro numero[80]
+		
+		  para(inteiro x=0; x<80; x++){
+			  escreva("\n digite um numero:" )leia (numero[x])
+
+		  se(numero[x]>=10 e numero[x]<=150){
+			  escreva("esse numero esta entre 10 e 150 \n")}
+		  senao{
+			  escreva(" esse numero não esta entre 10 e 150 \n")}	
+	 }
+   }
+
+}	
+
+16ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		inteiro idade[75]
+		
+		para(inteiro x=0; x<75; x++){
+			escreva("qual a ", x+1, "º idade: ") leia(idade[x])
+		
+		 se(idade[x]>=18){
+		 	escreva("maior de idade \n")}
+		 senao{
+		 	escreva("menor de idade \n")}}
+		 }
+}
+	
+17ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		cadeia nome[56] caracter sexo[56] inteiro quant_mulheres = 0, quant_homens = 0 
+
+		
+
+		para(inteiro x = 0; x < 56; x++){
+			escreva("qual seu nome?: ") leia(nome[x])
+			escreva("Informe o ", " sexo [F|M]: ") leia(sexo[x])
+
+               limpa()
+
+			se(sexo[x] == 'F' ou sexo[x] == 'f'){
+				quant_mulheres ++}
+			senao{
+				quant_homens ++}}
+
+				limpa()
+
+				escreva("Quantidade de sexo masculino: ", quant_homens)
+				escreva("\nQuantidade de sexo feminino: ", quant_mulheres)
+			
+}
+
+}
+		
+18ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		inteiro ano_carro = 0, carro_2000 = 0, total_de_carros = 0
+		real por_des = 0.0, valor_do_carro = 0.0, valor_do_des = 0.0, valor_pago = 0.0, des = 0.0, ar
+		cadeia res = "s"
+
+		enquanto (res == "s"){ 
+			escreva("Digite o ano do carro: ")leia(ano_carro)
+			escreva("Digite o valor do carro: ")leia(valor_do_carro)
+
+			limpa()
+
+		     se(ano_carro <= 2000) {
+		        por_des = 0.12
+		        carro_2000 = carro_2000 + 1} 
+		     senao {
+		        por_des = 0.07}
+
+		      total_de_carros =  total_de_carros + 1
+		      des = valor_do_carro * por_des
+
+		      escreva("Desconto: ", des, "\n")
+		      escreva("Valor com desconto:", valor_do_carro - des, "\n")
+
+		      escreva("Deseja continuar: |S|N|: ")leia(res)
+		       se(res == "s"){
+		        limpa()}
+		       senao{
+		       	limpa()}
+		       }
+		        
+		      escreva("Total de carros: ", total_de_carros, "\n")
+		      escreva("Total de carros com ano até 2000: ", carro_2000, "\n")
+		      		
+	}
+}
+
+19ª QUESTÃO
+programa{
+	
+	funcao inicio(){
+		
+		cadeia nome, sexo, saude, res = "s"
+		inteiro idade, apto=0, n_apto=0
+		enquanto (res == "s"){
+			
+			limpa()
+			
+			escreva("nome: ")leia(nome)
+	    		escreva("idade: ")leia(idade)
+	    		escreva("sexo | F | M |: ")leia(sexo)
+	    		escreva("como esta sua saude | B | M | ")leia(saude)
+
+	    		limpa()
+	    		
+		    escreva("Nome: ", nome, "\n")
+		    escreva("Idade: ", idade, "\n")
+		    escreva("Sexo: ", sexo, "\n")
+		    escreva("saude: ", saude, "\n")
+		    
+		    se (sexo == "m" e idade >=18 e saude == "b") {
+		        escreva("Esta apto para comprir o alistamento \n")
+		        apto = apto + 1}
+		        
+		        senao {
+		        escreva("Não esta apto para comprir o alistamento \n")
+		        n_apto =n_apto + 1}
+		        
+		    escreva("Deseja continuar: | S | N | :")leia(res)
+		    se(res==res){
+		    	limpa()}
+		    senao{
+		    	limpa()}
+			
+		    escreva("total de pessoas aptas: ",apto,"\n")
+		    escreva("total de pessoas não aptas: ", n_apto,"\n")
+  }
+ }
+}
+
+20ª QUESTÃO 
+
+	Programa{
+	funcao inicio(){
+
+	  real custo[40], venda[40]
+	  real media_vendas=0.0, media_custo=0.0
+	 
+
+	  para(inteiro x = 0; x < 40; x++){
+
+	    escreva("preço de custo do produto: ")leia(custo[x])
+	    escreva("preço de venda do produto: ")leia(venda[x])
+
+	  limpa()
+
+	   se(custo[x]==venda[x]){
+	  	 escreva("empate\n")}
+
+	   senao se(venda[x]>custo[x]){
+	   	 escreva("lucro\n")}
+	   senao{
+	  	 escreva("prejuizo\n")}
+
+	  	
+	   media_custo= media_custo+custo[x]
+	   media_vendas= media_vendas+venda[x] }
+
+	   limpa()
+
+	  escreva("\nmedia de custo: ",media_custo/40)
+	  escreva("media de vendas: ", media_vendas/40)
+	  
+	}
+}		
+
+
+		
+
+	
+		
+			
